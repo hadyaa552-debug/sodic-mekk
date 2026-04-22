@@ -2,7 +2,6 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'prod-images.nawy.com' },
       { protocol: 'https', hostname: 'sodicegy.org' },
     ],
   },

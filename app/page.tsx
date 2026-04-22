@@ -6,24 +6,25 @@ import { Toaster } from "@/components/toaster"
 
 // ── Real images from sodicegy.org ──────────────────
 const IMGS = {
-  logo: "https://sodicegy.org/wp-content/uploads/2025/10/SE-Lockupd.png",
-  aboutRight: "https://sodicegy.org/wp-content/uploads/2025/10/xaxaxaxax-6.jpg",
-  caesarLogo: "https://sodicegy.org/wp-content/uploads/2025/10/Caesar-Logo.png",
-  caesarRight: "https://sodicegy.org/wp-content/uploads/2025/10/xaxaxaxax-1.jpg",
-  vyeLogo: "https://sodicegy.org/wp-content/uploads/2025/10/Vye-logo-new-rdcqyjccxq5v3drltpdy7jmegwovlvs7gnnign8o7u.png",
-  vyeRight: "https://sodicegy.org/wp-content/uploads/2025/10/About-VYE-01.jpg",
+  logo: "/images/SE-Lockupd.png",
+  aboutRight: "/images/xaxaxaxax-6.jpg",
+  caesarLogo: "/images/Caesar-Logo.png",
+  caesarRight: "/images/xaxaxaxax-1.jpg",
+  vyeLogo: "/images/Vye-logo-new-rdcqyjccxq5v3drltpdy7jmegwovlvs7gnnign8o7u.png",
+  vyeRight: "/images/About-VYE-01.jpg",
+  heroImg: "/images/BB-FINAL-1-1280x640-1.jpg",
 }
 
 const CAESAR_SLIDES = [
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/11804/default.webp", label: "WAVE ONE STORY VILLA" },
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/11805/default.webp", label: "OCEAN VILLA" },
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/11806/default.webp", label: "REEF VILLA" },
+  { img: "/images/Caesar-01-Wave-one-story-Villa-892x593-1.jpg", label: "WAVE ONE STORY VILLA" },
+  { img: "/images/Caesar-04-Ocean-Villa-879x588-1.jpg", label: "OCEAN VILLA" },
+  { img: "/images/Caesar-07-Reef-Villa-879x588-1.jpg", label: "REEF VILLA" },
 ]
 const VYE_SLIDES = [
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/13147/default.webp", label: "NOVA" },
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/13140/default.webp", label: "NEO" },
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/13141/default.webp", label: "SOL HOMES" },
-  { img: "https://prod-images.nawy.com/processed/compound_image/image/13142/default.webp", label: "SOL VILLAS" },
+  { img: "/images/Nova-Main-Image-892x593-1.jpg", label: "NOVA" },
+  { img: "/images/Vye-Main-Image.jpg", label: "NEO" },
+  { img: "/images/Sol-Homes-Main-Image-1-879x588-1.jpg", label: "SOL HOMES" },
+  { img: "/images/Sol-Villas-Main-Image-1-879x588-1.jpg", label: "SOL VILLAS" },
 ]
 
 const PHONE = "+201034442613"
@@ -202,7 +203,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="relative min-h-screen grid lg:grid-cols-2" style={{paddingTop:64}}>
         <div className="absolute inset-0">
-          <img src="https://prod-images.nawy.com/processed/compound_image/image/13147/default.webp" alt="SODIC" className="w-full h-full object-cover" />
+          <img src={IMGS.heroImg} alt="SODIC" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/55" />
           {/* Watermark */}
           <div className="absolute inset-0 flex items-start justify-center pt-24 overflow-hidden pointer-events-none">
@@ -269,9 +270,9 @@ export default function Home() {
           <h2 className="text-xl font-bold mb-6">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5">
             {[
-              { tag:"Launching Now", name:"Mostakbal city, Egypt", img:"https://prod-images.nawy.com/processed/compound_image/image/6330/default.webp", id:"eastvale" },
-              { tag:"VYE", name:"New Zayed, Egypt", img:"https://prod-images.nawy.com/processed/compound_image/image/13147/default.webp", id:"vye" },
-              { tag:"CAESAR", name:"North Coast, Egypt", img:"https://prod-images.nawy.com/processed/compound_image/image/11804/default.webp", id:"caesar" },
+              { tag:"Launching Now", name:"Mostakbal city, Egypt", img:"/images/xaxaxaxax-3.jpg", id:"eastvale" },
+              { tag:"VYE", name:"New Zayed, Egypt", img:"/images/Vye-Main-Image.jpg", id:"vye" },
+              { tag:"CAESAR", name:"North Coast, Egypt", img:"/images/Caesar-01-Wave-one-story-Villa-892x593-1.jpg", id:"caesar" },
             ].map(p => (
               <div key={p.id} className="relative overflow-hidden cursor-pointer group aspect-[4/3]" onClick={() => scroll(p.id)}>
                 <img src={p.img} alt={p.tag} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
