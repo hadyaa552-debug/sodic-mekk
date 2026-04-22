@@ -15,10 +15,10 @@ export default function ThankYou() {
           <p className="text-muted-foreground text-sm">Our team will contact you within 24 hours.</p>
         </div>
         <div className="border border-border p-5 space-y-3">
-          <a href="tel:+201110944499" className="flex justify-between py-2 border-b border-border hover:text-primary">
-            <span className="font-bold" dir="ltr">01110944499</span><span className="text-xs text-muted-foreground">Call Direct</span>
+          <a href="tel:+201034442613" className="flex justify-between py-2 border-b border-border hover:text-primary">
+            <span className="font-bold" dir="ltr">01034442613</span><span className="text-xs text-muted-foreground">Call Direct</span>
           </a>
-          <a href="https://wa.me/201110944499" target="_blank" rel="noopener noreferrer" className="flex justify-between py-2 hover:text-primary">
+          <a href="https://wa.me/201034442613" target="_blank" rel="noopener noreferrer" className="flex justify-between py-2 hover:text-primary">
             <span className="font-bold text-green-600">WhatsApp</span><span className="text-xs text-muted-foreground">Instant Reply</span>
           </a>
         </div>

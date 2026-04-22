@@ -43,12 +43,12 @@ export default function Header({ lang, setLang }: { lang: "en" | "ar", setLang: 
             className={`text-xs font-black px-3 py-1.5 border transition-all ${scrolled ? "border-primary text-primary hover:bg-primary hover:text-white" : "border-white/40 text-white hover:bg-white/10"}`}>
             {isAr ? "EN" : "AR"}
           </button>
-          <a href="tel:+201110944499" className={`hidden sm:block text-sm font-black ${scrolled ? "text-foreground" : "text-white"}`} dir="ltr">01110944499</a>
+          <a href="tel:+201034442613" className={`hidden sm:block text-sm font-black ${scrolled ? "text-foreground" : "text-white"}`} dir="ltr">01034442613</a>
           <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }) }}
             className={`hidden sm:block text-xs font-black px-5 py-2 tracking-wide transition-colors ${scrolled ? "bg-primary text-white" : "bg-white text-primary"}`}>
             {isAr ? "استفسر الآن" : "ENQUIRE NOW"}
           </a>
-          <a href="tel:+201110944499" className={`sm:hidden p-2.5 ${scrolled ? "bg-primary text-white" : "bg-white text-primary"}`}><Phone className="w-4 h-4" /></a>
+          <a href="tel:+201034442613" className={`sm:hidden p-2.5 ${scrolled ? "bg-primary text-white" : "bg-white text-primary"}`}><Phone className="w-4 h-4" /></a>
         </div>
       </div>
     </header>
